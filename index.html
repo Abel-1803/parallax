@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+ 
+            <div class="nav">
+                <img class="logo" src="./img/png-transparent-fox-movies-television-channel-star-movies-logo-fox-miscellaneous-television-text-thumbnail-removebg-preview.png" alt="">
+                <ul>
+                    <li><a class="n" href="">Home</a></li>
+                    <li><a class="n"  href="">About</a></li>
+                    <li><a class="n"  href="">Contact</a></li>
+                    <li><a class="n"  href="">Sign In</a></li>
+                </ul>
+            </div>
+            <section>
+                <img class="cuts" id="kill" src="./img/MV5BZjI1ZjM3NjUtYTc1Ni00ODJmLWI5YjQtMWZiZTAyNTFiZGY1XkEyXkFqcGc_._V1_FMjpg_UX1000_-removebg-preview.png" alt="">
+                <img class="cuts" id="blood" src="./img/22bcdc3f0733c0a90d6a3459d81c74917e4be3632c8cfe166486d7f7783387b0._SX1080_FMjpg_-removebg-preview.png" alt="">
+                <img class="cuts" id="cap" src="./img/thumb-1920-633552-removebg-preview (1).png" alt="">
+
+            </section>
+            <div class="content">
+                <div class="card" style="width: 18rem;">
+                    <img class="mov" src="https://m.media-amazon.com/images/M/MV5BNmNlN2ZlZGYtMmZlYS00N2ZkLWJjMTgtYzI5MjBjY2ExZjMyXkEyXkFqcGc@._V1_.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Laapata Ladies</h5>
+                      <a href="#" class="btn btn-primary">Watch Now</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="mov" src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC/et00343221-jbmdaptyjw-portrait.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Thangalaan</h5>
+                      <a href="#" class="btn btn-primary">Watch Now</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="mov" src="https://cdn.marvel.com/content/1x/themarvels_lob_crd_05.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">The Marvels</h5>
+                      <a href="#" class="btn btn-primary">Watch Now</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="mov" src="https://www.justwatch.com/images/poster/317138629/s332/kill-2024" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Kill</h5>
+                      <a href="#" class="btn btn-primary">Watch Now</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="mov" src="https://images.justwatch.com/poster/312646711/s332/smile-it-was-written" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Smile</h5>
+                      <a href="#" class="btn btn-primary">Watch Now</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="mov" src="https://images.justwatch.com/poster/8791013/s718/we-go-on.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">We Go On</h5>
+                      <a href="#" class="btn btn-primary">Watch Now</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="mov" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHnTnnvDlA7KmOp7_tlU_Jp1cpbAtixCSsb598ZGRccOhXMywTGvWyJvFNOtQquO-4SYI&usqp=CAU" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Shark Bait</h5>
+                      <a href="#" class="btn btn-primary">Watch Now</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="mov" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKwDHkwZNa3A37Ow2zkv9uuqTrSEhTVPxYwNVjuBmNv_MdxBlm3wgYDVOcYoj2_MH4-AI&usqp=CAU" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">The Last Breathe</h5>
+                      <a href="#" class="btn btn-primary">Watch Now</a>
+                    </div>
+                  </div>
+                  
+         
+        
+               </div>
+               <script>
+                let kill = document.getElementById('kill');
+                let blood = document.getElementById('blood');
+                let cap = document.getElementById('cap');
+
+                window.addEventListener('scroll',()=>{
+                  let value =window.scrollY;
+                  kill.style.left =value *0.5 +'px'
+                  blood.style.left =value *0.25 +'px'
+                     cap.style.left =value *0.25 +'px'
+
+                });
+
+               </script>
+           
+      
+
+       
+      
+        
+
+    
+</body>
+</html>
